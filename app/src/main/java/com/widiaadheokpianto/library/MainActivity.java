@@ -49,24 +49,3 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        //Memanggil/Memasang menu item pada toolbar dari layout menu_bar.xml
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.menu_bar, menu);
-//        return super.onCreateOptionsMenu(menu);
-//    }
-//
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()){
-//            case R.id.about :
-//                //Kode disini akan di eksekusi saat tombol about di klik
-//                Toast.makeText(this, "Developer By: Wildan", Toast.LENGTH_SHORT).show();
-//                break;
-//            case R.id.search :
-//                //Kode disini akan di eksekusi saat tombol search di klik
-//                Toast.makeText(this, "Silakan Cari Sesuatu", Toast.LENGTH_SHORT).show();
-//                break;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
-
