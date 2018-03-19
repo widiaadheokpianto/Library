@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Library SMK Grafika BN");
+        getSupportActionBar().setTitle("Library SMK Grafika");
+        getSupportActionBar().setElevation(0);
 
         //Menerapkan TabLayout dan ViewPager pada Activity
         final TabLayout tabLayout = findViewById(R.id.tab_layout);

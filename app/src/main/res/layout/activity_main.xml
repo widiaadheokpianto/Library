@@ -11,6 +11,7 @@
         android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:elevation="0dp"
         android:background="@color/colorAccent"
         android:minHeight="?attr/actionBarSize">
 
@@ -19,9 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:elevation="0dp"
-            android:minHeight="56dp"
-            android:visibility="visible"
+            app:elevation="0dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:theme="@style/AppTheme"></android.support.v7.widget.Toolbar>
 
@@ -42,18 +41,16 @@
         app:tabTextColor="#FFFFFF">
 
         <android.support.design.widget.TabItem
-            android:id="@+id/tab_kontak"
+            android:id="@+id/tab_buku"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:icon="@drawable/ic_launcher_foreground"
-            android:text="Fragment 1" />
+            android:text="BUKU" />
 
         <android.support.design.widget.TabItem
-            android:id="@+id/tab_pesan"
+            android:id="@+id/tab_profil"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:icon="@drawable/ic_launcher_foreground"
-            android:text="Fragment 2" />
+            android:text="PROFIL" />
 
     </android.support.design.widget.TabLayout>
 
