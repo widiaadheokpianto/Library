@@ -17,9 +17,18 @@
         <!--android:textSize="24sp"-->
         <!--android:textStyle="bold" />-->
 
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:max="100"/>
+
     <WebView
         android:id="@+id/webview"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/progress"/>
 
 </RelativeLayout>
