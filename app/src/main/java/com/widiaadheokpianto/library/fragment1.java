@@ -1,5 +1,6 @@
 package com.widiaadheokpianto.library;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -19,7 +19,7 @@ public class fragment1 extends Fragment
     private WebView mWebView;
     private ProgressBar loading;
 
-    private String URL = "https://www.dinus.ac.id";
+    private String URL = "https://www.google.co.id";
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -27,6 +27,7 @@ public class fragment1 extends Fragment
 
         mWebView = view_frag1.findViewById(R.id.webview);
         loading = view_frag1.findViewById(R.id.progress);
+
         settings();
         load_website();
 //
@@ -39,6 +40,7 @@ public class fragment1 extends Fragment
         return view_frag1;
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     private void settings()
     {
         WebSettings webSettings = mWebView.getSettings();
@@ -80,11 +82,11 @@ public class fragment1 extends Fragment
 
         mWebView.setWebViewClient(new WebViewClient()
         {
-            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request)
-            {
-                view.loadUrl(request.toString());
-                return true;
-            }
+//            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request)
+//            {
+//                view.loadUrl(request.toString());
+//                return true;
+//            }
 
             public void onPageFinished(WebView view, String url)
             {
